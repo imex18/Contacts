@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.ContactDetailsFragment">
+
+    <ImageView
+        android:id="@+id/cd_iv_avatar"
+        android:layout_width="160dp"
+        android:layout_height="151dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/contact_s_picture"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/cd_tv_name_under_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+
+
+o            <ImageView
+                android:id="@+id/cd_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+               android:src="@drawable/ic_baseline_message_24" />
+
+            <ImageView
+                android:id="@+id/cd_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/ic_baseline_email_24"
+               />
+
+            <ImageView
+                android:id="@+id/cd_call"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="60dp"
+                android:src="@drawable/ic_baseline_call_24"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/cd_tv_fullName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="First Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_person_outline_24" />
+
+
+    <TextView
+        android:id="@+id/cd_tv_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="Phone Number"
+        android:textSize="15sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_local_phone_24"
+
+
+        />
+
+    <TextView
+        android:id="@+id/cd_tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="Email"
+        android:textSize="15sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_alternate_email_24" />
+
+    <TextView
+        android:id="@+id/cd_tv_company"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="Company"
+        android:textSize="15sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_work_24" />
+
+
+</LinearLayout>
